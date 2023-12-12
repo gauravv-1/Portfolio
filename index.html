@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://kit.fontawesome.com/844f454fae.js" crossorigin="anonymous"></script>
+
+  <!-- Bootstrap Link -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <!-- CSS LINK  -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container-fluid">
+      <div class="brand-logo">
+        <a class="navbar-brand" href="#"><Span class="brand-let-1">GAURAV</Span> <span
+            class="brand-let-2">PISAL</span></a>
+      </div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+        aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+
+          <div class="left-nav-content nav-item navbar-nav">
+
+            <!-- switch bar -->
+            <label class="switch">
+              <input type="checkbox" id="backgroundCheckbox" onclick="changeBackground()">
+              <span class="slider"></span>
+            </label>
+            <!-- switch bar -->
+
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about-me" onclick="scrollToSection('about-me')">AboutMe</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#certifications">Certifications</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#project-section">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </div>
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+  <!-- Navbar Ends -->
+
+  <div class="container">
+
+    <!-- ----------------------------HOME SECTION-----------------------  -->
+    <div class="home-page slide-text">
+      <div class="hello-card">
+        <span>Hi &#128075 I am ,</span>
+        <br>
+        <span class="home-content" id="name-card"><span style="color: aquamarine;">G</span>aurav <span
+            style="color: aquamarine;">P</span>isal</span>
+        <br>
+        <span style="color: aqua; font-size: 1.2rem; margin-top: 30px;">ENTC Engineering Student</span>
+      </div>
+
+      <div class="home-content-down row" style="color: rgb(255, 255, 255);">
+        <div class="col-12 home-text" style="font-size: large;">
+          I am an enthusiastic and dedicated engineering student with a strong passion for programming and web
+          development. <br><br>Skilled in HTML, CSS, Javascript Bootstrap for creating visually appealing web
+          interfaces. Proficient in Java for robust back-end development and SQL for seamless database management. <br>
+          Experienced leader as Joint Technical Secretary TESA, adept in event management and fostering teamwork.
+          <br><br> Versatile in C programming, with successful completion of diverse front-end web development projects.
+          <br>
+          <a href="#contact"><button class="btn-contact">Contact</button></a>
+        </div>
+      </div>
+    </div>
+    <!-- -----------------------------ABOUT SECTION STARTS---------------------------------------  -->
+
+    <section class="about-section" id="about-me">
+      <div class="row">
+        <div class="col-md-6 photo-container">
+          <!-- Left side with photo -->
+          <img src="img/my_img.JPG" alt="Your Photo" class="img-fluid about-photo">
+        </div>
+        <div class="col-md-6">
+          <!-- Right side for about content -->
+          <!-- Add your about content here -->
+          <div class="about-text">
+            <h2 style="color: aquamarine;"><span style="border-bottom: 2px solid white;"><i style="color: white;"
+                  class="fa-solid fa-user fa-xs"></i> About Me</span></h2>
+            <p style="font-size: large; margin-top: 30px;">Hello, I'm Gaurav Pisal, a third-year Electronics and
+              Telecommunication student at AISSMS IOIT.
+              <br><br>
+              I'm passionate about web development, love designing creative websites, and am actively seeking
+              opportunities to contribute my skills as a developer.
+              <br>I'm excited about creating innovative solutions and collaborating on projects that push the boundaries
+              of technology.
+            </p>
+          </div>
+
+          <h2 style="color: aquamarine; margin-top: 20px;"><span style="border-bottom: 2px solid white;"> <img
+                style="margin-bottom: 20px; margin-right: 10px; font-size: 20px; color: white;" src="img/skills.png"
+                alt="">Skills</span></h2>
+
+
+
+          <!-- Skills ROW 1 -->
+          <div class="image-gallery">
+            <div class="image-container">
+              <img src="img/html.png" alt="Image 1">
+              <div class="text-overlay">
+                <p>HTML5</p>
+              </div>
+            </div>
+
+            <div class="image-container">
+              <img src="img/css.png" alt="Image 2">
+              <div class="text-overlay">
+                <p>CSS3</p>
+              </div>
+            </div>
+
+            <div class="image-container">
+              <img src="img/js.png" alt="Image 2">
+              <div class="text-overlay">
+                <p>JS</p>
+              </div>
+            </div>
+
+            <div class="image-container">
+              <img src="img/bootstrap.png" alt="Image 2">
+              <div class="text-overlay">
+                <p>Bootstrap</p>
+              </div>
+            </div>
+          </div>
+
+
+
+          <!-- Skills ROW 2 -->
+          <div class="image-gallery">
+            <div class="image-container">
+              <img src="img/java.png" alt="Image 1">
+              <div class="text-overlay">
+                <p>JAVA</p>
+              </div>
+            </div>
+
+            <div class="image-container">
+              <img src="img/c.png" alt="Image 2">
+              <div class="text-overlay">
+                <p>C</p>
+              </div>
+            </div>
+
+            <div class="image-container">
+              <img src="img/sql.png" alt="Image 2">
+              <div class="text-overlay">
+                <p>MySQL</p>
+              </div>
+            </div>
+
+            <div class="image-container">
+              <img src="img/github.png" alt="Image 2">
+              <div class="text-overlay">
+                <p>GitHub</p>
+              </div>
+            </div>
+          </div>
+
+
+
+
+          <h2 style="color: aquamarine; margin-top: 20px;"><span style="border-bottom: 2px solid white;"><i
+                style="color: white;" class="fa-xs fa-solid fa-graduation-cap"></i> Education</span></h2>
+          <p style="color: #c2efef; font-size: large; margin-top: 30px;">
+            <span style="color: rgb(241, 172, 82);">AISSMS INSTITUTE of INFORMATION TECHNOLOLGY, PUNE.</span>
+            <br>
+            <span style="font-size: medium; color: rgb(255, 255, 255);">BE Electronics and Telecommunication</span>
+            <br>
+            <span>Pursuing</span>
+            <br>
+            <br>
+
+            <span style="color: rgb(241, 172, 82);">YASHAVANTRAO CHAVAN INSTITUTE OF SCIENCE, SATARA.</span>
+            <br>
+            <span style="font-size: medium; color: rgb(255, 255, 255);">HSC SCIENCE</span>
+            <br>
+            <span>88.67 &#37;</span>
+
+            <br>
+            <br>
+
+            <span style="color: rgb(241, 172, 82);">DNYANDEEP ENGLISH MEDIUM SCHOOL, WAI.</span>
+            <br>
+            <span style="font-size: medium; color: rgb(255, 255, 255);">SSC</span>
+            <br>
+            <span>84.40 &#37;</span>
+          </p>
+
+
+        </div>
+        <!-- <hr style="color: white;"> -->
+      </div>
+
+    </section>
+
+
+    <!-- -----------------------Licenses and Certifications Section-----------------------  -->
+
+    <section class="certifications" id="certifications">
+      <!-- <h2>Certifications</h2> -->
+
+      <!-- Certification Card 1 -->
+      <div class="certification-card">
+        <h3>Licenses & certifications <img style="max-width: 4%;" src="img/certificate (1).png" alt=""> </h3>
+        <hr style="color: white;">
+        <div class="cert-1">
+          <h5> <span><img style="width: 4%; padding-right: 10px;" src="img/coursera.png" alt=""></span> Python for Data
+            Science, AI &
+            Development</h5>
+          <p>Issued by: Coursera</p>
+          <p>Issued Jan 2023</p>
+          <p>Credential ID FR4GRT36QMMN</p>
+          <a href="https://www.coursera.org/account/accomplishments/certificate/FR4GRT36QMMN" target="_blank">
+            <button type="button">Show Credential</button>
+          </a>
+        </div>
+        <hr style="color: white;">
+        <div class="cert-2">
+          <h5> <span><img style="width: 5%; padding-right: 10px;" src="img/coursera.png" alt=""></span> HTML, CSS, and
+            Javascript for Web Developers</h5>
+          <p>Issued by: Coursera</p>
+          <p>Issued Apr 2023</p>
+          <p>Credential ID SVV6QCD8RFY7</p>
+          <a href="https://www.coursera.org/account/accomplishments/certificate/SVV6QCD8RFY7" target="_blank">
+            <button type="button">Show Credential</button>
+          </a>
+        </div>
+        <hr>
+
+      </div>
+
+    </section>
+
+    <!-- -------------------------PROJECT SECTION---------------------  -->
+    <section style="margin-top: 50px; margin-bottom: 100px;" class="my-projects" id="project-section">
+      <h2 style="font-weight: 600;" class="text-center">Project Section</h2>
+      <div class="row text-center">
+
+        <!-- PROJ-1  -->
+        <div class="project col-md-4">
+          <div class="proj">
+            <img class="to-link-img" style="float: right; width: 7%; filter: invert(100); cursor: pointer;" src="img/external-link.png"
+              alt="">
+            <div><img src="img/project-icon.png" alt=""></div>
+            <h4>Portfolio Website</h4>
+            <div class="proj-text">
+              <p style="color: aquamarine;">Front-end Website Project</p>
+              <p>Responsive portfolio website featuring Home, About, Certifications, and Projects sections. Crafted with
+                HTML, CSS, JS, and Bootstrap for optimal user experience</p>
+
+            </div>
+            <div class="proj-icons">
+              <img src="img/git-icon.png" alt="">
+            </div>
+            <div class="footer-proj">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JS</span>
+              <span>BootStrap</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- PROJ-2  -->
+        <div class="project col-md-4">
+          <div class="proj">
+            <a href="https://gauravv-1.github.io/Linkcode_project.github.io/"><img
+                style="float: right; width: 7%; filter: invert(100); cursor: pointer;" src="img/external-link.png"
+                alt=""></a>
+            <div><img src="img/project-icon.png" alt=""></div>
+            <h4>Bus Reservation Website</h4>
+            <p style="color: aquamarine;">Front-end Website Project</p>
+            <p> Crafted a responsive Bus Reservation website with Home, Book Now, Manage Tickets, Locate Bus sections
+              using HTML, CSS, JS, and Bootstrap for an enhanced user experience.</p>
+
+            <div class="proj-icons">
+              <img src="img/git-icon.png" alt="">
+            </div>
+            <div class="footer-proj">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JS</span>
+              <span>BootStrap</span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- PROJ-3  -->
+        <div class="project col-md-4">
+          <div class="proj">
+            <a href="https://gauravv-1.github.io/Linkcode_project.github.io/"><img
+                style="float: right; width: 7%; filter: invert(100); cursor: pointer;" src="img/external-link.png"
+                alt=""></a>
+            <div><img src="img/project-icon.png" alt=""></div>
+            <h4>In Progress</h4>
+            <p style="color: aquamarine;">Back-end Website Project</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam quis corrupti exercitationem fuga
+              molestiae pariatur Lorem ipsum dolor sit amet.</p>
+
+            <div class="proj-icons">
+              <img src="img/git-icon.png" alt="">
+            </div>
+            <div class="footer-proj">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JS</span>
+              <span>BootStrap</span>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </section>
+
+    <!-- ----------------------Contact Section---------------------  -->
+    <section class="contact-me" id="contact">
+      <div class="contact-form">
+        <h2 style="font-weight: 600;" class="text-center">Contact Me</h2>
+        <p class="text-center" style="color: rgb(35, 255, 182); font-size: large;">Let's Connect! Reach out to me for
+          collaboration, inquiries,
+          or just to say hello. I'm eager to hear from you!</p>
+
+        <div style="margin-top: 20px; margin-bottom: 40px;" class="contact-btn row">
+          <div class="col-md-4"><a href="mailto:pisalgaurav91@gmail.com"><button><img
+                  style="width: 10%; margin-top:1px;" src="img/gmail.png" alt="">
+                Gmail</button></a></div>
+          <div class="col-md-4"><a href="https://www.instagram.com/gauravpisall/"><button><img style="width: 10%;"
+                  src="img/instagram.png" alt=""> Instagram</button></a></div>
+          <div class="col-md-4"><a
+              href="https://www.linkedin.com/in/gaurav-pisal-135a16232?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><button><img
+                  style="width: 10%;" src="img/linkedin.png" alt=""> LinkedIn</button></a></div>
+        </div>
+
+        <form id="contactForm" action="" method="post">
+          <input id="name" type="text" name="name" placeholder="Your Name" required>
+          <input id="email" type="email" name="email" placeholder="Your Email" required>
+          <textarea id="message" name="message" placeholder="Your Message" rows="4" required></textarea>
+          <button onclick="submitForm()" type="button">Submit</button>
+        </form>
+      </div>
+
+    </section>
+
+
+  </div>
+  <!-- <hr> -->
+  <footer class="footer">
+    <p style="font-size: large;">Designed & Coded by <span style="color: rgb(8, 251, 170);">Gaurav</span> Pisal <span
+        class="emoji">💀</span></p>
+    <p>&copy; All Rights Reserved.</p>
+  </footer>
+  <hr>
+  <!-- <div class="copyright">
+    <p>Designed & Coded by <span>Gaurav</span> <span>Pisal</span>  </p>
+  </div> -->
+
+
+  <script src="js/script.js">
+
+  </script>
+</body>
+
+<!-- JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+</html>
